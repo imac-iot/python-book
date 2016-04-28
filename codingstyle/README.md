@@ -165,9 +165,9 @@ class: Arithmetic(四則運算)
       intValue2: Int
 function:
     add
-        function解釋
+        function解釋請看上面的function註解
     subtraction
-        function解釋
+        function解釋請看上面的function註解
 """
 class Arithmetic:
     def __init__(self, intValue1, intValue2):
@@ -275,25 +275,30 @@ class Ball(object):
 ```
 
 ##Naming
-基本上用大駝峰 ，在函數、模組、物件內前面加 `_`(一個底線)
-
+在函數、模組、物件內前面加 `_`(一個底線)<br>
+變數: 變數型態(小寫)+變數名稱(大駝峰)  strName <br>
+Classes: 名稱(大駝峰)    Login <br>
+function: 名稱(小駝峰)   tryToDo <br>
+Exceptions: Ex+名稱(大駝峰) ExNoValue <br>
+Global/Class Constants: 都大寫單字用底線分開  IS_ALIVE <br>
+Global/Class 變數: 都小寫單字用底線分開  it_is_class <br>
 
 | Type | Public | Internal |
 | ---- | ------ | -------- |
-| Packages |	lower_with_under |  	|
-| Modules | lower_with_under | _lower_with_under |
+| Packages |	WithUnder |  	|
+| Modules | WithUnder | _WithUnder |
 | Classes |	CapWords | _CapWords |
-| Exceptions | CapWords |
-| Functions | lower_with_under() | _lower_with_under() |
-| Global/Class Constants | CAPS_WITH_UNDER | _CAPS_WITH_UNDER|
+| Exceptions | ExCapWords |  |
+| Functions | lowerWithUnder() | _lowerWithUnder() |
+| Global/Class Constants | CAPS_WITH_UNDER | _CAPS_WITH_UNDER |
 | Global/Class Variables | lower_with_under | _lower_with_under |
-| Instance Variables | lower_with_under | _lower_with_under (protected) or _lower_with_under (private) |
-| Method Names | lower_with_under() | _lower_with_under() (protected) or _lower_with_under() (private) |
-| Function/Method Parameters | lower_with_under |  |
+| Instance Variables | intWithUnder | _intWithUnder (protected) or _intWithUnder (private) |
+| Method Names | lowerWithUnder() | _lowerWithUnder() (protected) or _lowerWithUnder() (private) |
+| Function/Method Parameters | intWithUunder |  |
 | Local Variables | lower_with_under |
 
 ##Main
-主要的程式要放在main()裡面
+主要的程式要放在main()裡面並把Main放到最下面
 ```python
 def main():
       ...
